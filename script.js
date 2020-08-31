@@ -37,7 +37,7 @@ async function getQuote() {
         quoteText.innerText = data.quoteText;
         complete();
     } catch (error){
-       console.log(error);
+       getQuote();
     }
 }
 
